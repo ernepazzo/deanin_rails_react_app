@@ -1,9 +1,8 @@
 // API_URL comes from the .env.development file
 import React, { useState, useEffect } from 'react';
-// import { API_URL } from '../../constants' 
+import { API_URL } from '../../constants.js';
 
 function PostsList() {
-  const API_URL = 'http://localhost:3000/api/v1/posts';
   const [posts, setPosts] = useState([]);
   const [, setLoading] = useState(true);
   const [, setError] = useState(null);
